@@ -1,0 +1,4 @@
+/home/jieli/DataBase/build/CMakeFiles/rebuild_cache.dir
+/home/jieli/DataBase/build/CMakeFiles/edit_cache.dir
+/home/jieli/DataBase/build/CMakeFiles/main.dir
+/home/jieli/DataBase/build/CMakeFiles/base-static.dir
