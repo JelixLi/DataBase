@@ -7,12 +7,12 @@
 #IncludeRegexTransform: 
 
 /home/jieli/DataBase/main.cpp
+test.h
+/home/jieli/DataBase/test.h
 iostream
 -
-string
--
-vector
--
+
+/home/jieli/DataBase/test.h
 mysql/mysql.h
 -
 

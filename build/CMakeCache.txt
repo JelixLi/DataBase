@@ -197,8 +197,8 @@ EXECUTABLE_OUTPUT_PATH:PATH=
 //Single output directory for building all libraries.
 LIBRARY_OUTPUT_PATH:PATH=
 
-//Dependencies for target
-base-static_LIB_DEPENDS:STATIC=
+//Dependencies for the target
+base-static_LIB_DEPENDS:STATIC=general;mysqlclient;general;pthread;general;z;general;m;general;rt;general;dl;
 
 
 ########################
