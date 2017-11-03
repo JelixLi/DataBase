@@ -1,5 +1,9 @@
 
 #include <mysql/mysql.h>
+#include <vector>
+#include <string>
+
+using namespace std;
 
 #ifndef DataBase_Pic
 #define DateBase_Pic 
@@ -17,6 +21,8 @@ public:
         const char *unix_socket,
         unsigned long clientflag);// init mysql database
     void Get_Contents(const char* table); //get the contents inside tables
+    void DataBase_Close(); //close mysql
+    void DataBase_Insert(const char* table,vector<string> value); //insert data
 private:
     MYSQL mysql;
     static bool IF_CONFIG;

@@ -107,3 +107,25 @@ void DataBase_Pic::Get_Tables()
     //free buffer memory
     mysql_free_result(result);
 }
+
+void DataBase_Pic::DataBase_Insert(const char* table,vector<string> value)
+{
+    string cmd="insert into ";
+    cmd.append(table);
+    cmd.append(" values(");
+    for(vector<string>::const_iterator cit=value.begin();
+    cit!=value.end();
+    ++cit)
+    {
+        cmd.append(*cit);
+        cmd.append(",");
+    }
+    cmd.erase(cmd.end()-1);
+    cmd.append(");");
+    mysql_query(&mysql,cmd.c_str());
+}
+
+void DataBase_Pic::DataBase_Close()
+{
+    mysql_close(&mysql);
+}
